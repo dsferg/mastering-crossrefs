@@ -735,4 +735,20 @@ p.footer-sub
 		mc-format: '{quote}{para}{quote} {pageref}';
 		text-decoration: none;
 	}
+
+	MadCap|xref.FigureNumber
+	{
+		mc-format: '{paranumonly} {pageref}';
+	}
 }
+
+MadCap|xref.FigureNumber
+{
+	mc-format: '{paranumonly}';
+}
+
+p.FigureCaption
+{
+	mc-auto-number-format: 'F:Figure {n+}: ';
+}
+
