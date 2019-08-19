@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="89" MadCap:lastWidth="1472">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
+        <link href="../Prism/prism.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <MadCap:breadcrumbsProxy />
         <MadCap:bodyProxy />
+        <script type="text/javascript" src="../Prism/prism.js">
+        </script>
     </body>
 </html>
