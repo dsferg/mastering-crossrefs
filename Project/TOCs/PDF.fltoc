@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultToc
   Version="1"
   conditions="">
@@ -17,7 +17,7 @@
     ReplaceMergeNode="false" />
   <TocEntry
     Title="[%=System.LinkedTitle%]"
-    Link="/Content/A-Introduction-Topics/Getting-Started.htm"
+    Link="/Content/A-Introduction-Topics/Figure-Number.htm"
     StartChapter="true"
     PageLayout="/Content/Resources/PageLayouts/Chapters.flpgl"
     PageNumber="1"
@@ -33,7 +33,7 @@
     AutoEndOnLeftPage="enabled"></TocEntry>
   <TocEntry
     Title="[%=System.LinkedTitle%]"
-    Link="/Content/A-Introduction-Topics/More-Information.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    Link="/Content/A-Introduction-Topics/List-Item.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
   <TocEntry
     Title="[%=System.LinkedTitle%]"
     Link="/Content/B-Feature-Topics/Features.htm"
