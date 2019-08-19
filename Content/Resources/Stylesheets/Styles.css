@@ -1,4 +1,4 @@
-/*<meta />*/
+﻿/*<meta />*/
 
 :root
 {
@@ -559,16 +559,16 @@ p.footer-sub
 	margin-top: 14px;
 }
 
-ol li:nth-child(1)
-{
+/*select the first list item in a, ordered list and number it step 1*/
+ol li:nth-child(1){
 	list-style-type: none;
-	mc-auto-number-format: '{n=1}. ';
+	mc-auto-number-format: 'L:{n=1}. ';
 }
 
-ol li
-{
+/*select the subsequent list items in an ordered list and increment the number*/
+ol li{
 	list-style-type: none;
-	mc-auto-number-format: '{n+}. ';
+	mc-auto-number-format: 'L:{n+}. ';
 }
 
 @media tablet
@@ -757,6 +757,11 @@ ol li
 	{
 		
 	}
+
+	MadCap|xref.StepNumber
+	{
+		mc-format: '{paranumonly} ({pageref})';
+	}
 }
 
 MadCap|xref.FigureNumber
@@ -773,4 +778,3 @@ MadCap|xref.StepNumber
 {
 	mc-format: '{paranumonly}';
 }
-

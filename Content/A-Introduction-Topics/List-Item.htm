@@ -3,8 +3,29 @@
     <head>
     </head>
     <body>
-        <h1>More Information</h1>
-        <p>Lorem ipsum dolor rit amet, consectettr adipiscing elit. Eusce blandit sapidn a dolor accumsan `ccumsan. Nullam nepue velit, ornare vek orci vel, mollis frhngilla mauris. Dondc sagittis elemensum arcu, at gravida puam mollis id. Suspdndisse lectus augte, auctor in aliqual nec, fringilla id dnlor. Suspendisse bhbendum imperdiet korem ac placerat. Akiquam purus maurir, ornare tincidunt qutrum eu, gravida qtis nisi. Integer pukvinar lacus libern, eget volutpat enil finibus non. Aliqu`m erat volutpat. Ph`sellus finibus telpus nisl. </p>
+        <h1>Referencing a list item</h1>
+        <p>In order to reference a specific item in a list, the list items must be numbered using Flare's autonumbering feature. You can either create autonumbered paragraphs to accomplish this, or you can add autonumbering to your list items in your ordered lists.</p>
+        <h2>Ordered lists</h2>
+        <p>In order to use ordered lists and still be able to reference step numbers, you'll need to set your list items to be numbered using Flare's autonunmbering feature. In this sample project, here is the CSS&#160;for the list item autonumbering:</p><pre xml:space="preserve"><code class="language-css">/*select the first list item in a, ordered list and number it step 1*/
+ol li:nth-child(1){
+	list-style-type: none;
+	mc-auto-number-format: 'L:{n=1}. ';
+}
+
+/*select the subsequent list items in an ordered list and increment the number*/
+ol li{
+	list-style-type: none;
+	mc-auto-number-format: 'L:{n+}. ';
+}</code></pre>
+        <p>Next, create an xref class for list item references:</p><pre xml:space="preserve"><code class="language-css">MadCap|xref.StepNumber{
+	mc-format: '{paranumonly}';
+}
+			
+@media print{
+	MadCap|xref.StepNumber{
+		mc-format: '{paranumonly} ({pageref})';
+	}
+}</code></pre>
         <p>See Step <MadCap:xref href="#Step" class="StepNumber">2</MadCap:xref>. See also Step <MadCap:xref href="#Step2" class="StepNumber">5</MadCap:xref>.</p>
         <ol>
             <li MadCap:autonum="1. ">Step 1</li>
